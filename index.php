@@ -9,7 +9,6 @@ $pollsQuery=$db->query("
         $polls[]=$row;
     }
 
-
 ?>
 
 
@@ -26,7 +25,7 @@ $pollsQuery=$db->query("
     <?php if(!empty($polls)): ?>
         <ul>
             <?php foreach($polls as $poll): ?>
-            <li><a href="poll.php?id=<?php echo $poll->id?>"><?php echo $poll->question;?></a></li>
+            <li><a href="poll.php?poll=<?php echo $poll->id?>"><?php echo $poll->question;?></a></li>
            <?php endforeach;?>
       </ul>
     <?php else: ?>
