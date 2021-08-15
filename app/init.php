@@ -1,7 +1,7 @@
 <?php 
 
 session_start();
-$_SESSION['user_id']=3;
+$_SESSION['user_id']=5;
 
 $db=new PDO('mysql:dbname=poll;host=localhost', 'root', '');
 
